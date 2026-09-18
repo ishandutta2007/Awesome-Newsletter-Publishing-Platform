@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <style>
+      @keyframes floatParticle1 {
+        0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+        50% { transform: translate(30px, -20px) scale(1.2); opacity: 0.7; }
+      }
+      @keyframes floatParticle2 {
+        0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.2; }
+        50% { transform: translate(-25px, 25px) scale(1.3); opacity: 0.6; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { transform: scale(1); opacity: 0.4; }
+        50% { transform: scale(1.15); opacity: 0.8; }
+      }
+      @keyframes waveMotion {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .particle-1 { animation: floatParticle1 8s ease-in-out infinite; }
+      .particle-2 { animation: floatParticle2 10s ease-in-out infinite; }
+      .glow-bg { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .wave { animation: waveMotion 15s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg)" />
+
+  <!-- Animated Glowing Background Elements -->
+  <circle cx="600" cy="160" r="280" fill="url(#glow)" class="glow-bg" />
+  
+  <!-- Geometric Decorative Waves in Background -->
+  <g opacity="0.12">
+    <path d="M-600 220 Q -300 120 0 220 T 600 220 T 1200 220 T 1800 220" fill="none" stroke="#818cf8" stroke-width="4" class="wave" />
+    <path d="M-600 250 Q -300 170 0 250 T 600 250 T 1200 250 T 1800 250" fill="none" stroke="#c084fc" stroke-width="3" class="wave" style="animation-duration: 20s;" />
+  </g>
+
+  <!-- Floating Ambient Particles -->
+  <g>
+    <circle cx="150" cy="80" r="6" fill="#818cf8" class="particle-1" />
+    <circle cx="280" cy="240" r="4" fill="#c084fc" class="particle-2" />
+    <circle cx="950" cy="70" r="5" fill="#f472b6" class="particle-2" />
+    <circle cx="1050" cy="230" r="7" fill="#38bdf8" class="particle-1" />
+    <circle cx="850" cy="270" r="3" fill="#818cf8" class="particle-2" />
+  </g>
+
+  <!-- Header Graphic / Icon (Mail & Rocket SVG representation) -->
+  <g transform="translate(600, 68)" filter="url(#shadow)">
+    <!-- Mail Envelope Icon Frame -->
+    <rect x="-32" y="-24" width="64" height="48" rx="8" fill="#1e293b" stroke="url(#accent)" stroke-width="3" />
+    <path d="M-30 -20 L0 4 L30 -20" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- FOREGROUND TEXT (Protected from overlapping elements) -->
+  <g text-anchor="middle" filter="url(#shadow)">
+    <!-- Main Title -->
+    <text x="600" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="42" fill="#ffffff" letter-spacing="1">
+      Awesome Newsletter Publishing Platform
+    </text>
+
+    <!-- Subtitle Decorative Bar -->
+    <rect x="450" y="188" width="300" height="4" rx="2" fill="url(#accent)" />
+
+    <!-- Subtitle -->
+    <text x="600" y="225" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="18" fill="#cbd5e1" letter-spacing="0.5">
+      Curated Ecosystem of SaaS Products &amp; Open-Source Self-Hosted Solutions
+    </text>
+
+    <!-- Feature Tags -->
+    <text x="600" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" font-size="13" fill="#94a3b8" letter-spacing="1.5">
+      SaaS PLATFORMS • OPEN-SOURCE • EMAIL DELIVERABILITY • AUDIENCE GROWTH
+    </text>
+  </g>
+</svg>
