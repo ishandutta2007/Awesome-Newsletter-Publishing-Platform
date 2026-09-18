@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Newsletter-Publishing-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Newsletter-Publishing-Platform?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Newsletter-Publishing-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Newsletter-Publishing-Platform?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Newsletter-Publishing-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Newsletter-Publishing-Platform?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Newsletter-Publishing-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Newsletter-Publishing-Platform?style=flat-square&color=green" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -57,9 +57,9 @@ The table below details top hosted newsletter platforms, sorted in **descending 
 
 ## 💻 Open-Source GitHub Projects
 
-Leading open-source newsletter platforms and self-hosted mailing list systems, sorted in **descending order by GitHub star counts**:
+Leading open-source newsletter platforms and self-hosted mailing list systems, sorted in **descending order by GitHub Stars_Counts**:
 
-| Repository / Project | GitHub Stars | Description & Technical Highlights |
+| Repository / Project | GitHub_Stars | Description & Technical Highlights |
 | :--- | :--- | :--- |
 | **[Ghost](https://github.com/TryGhost/Ghost)** | [![Ghost Stars](https://img.shields.io/github/stars/TryGhost/Ghost?style=social&color=white)](https://github.com/TryGhost/Ghost/stargazers) | Full open-source publishing platform with native newsletters, membership subscriptions, modern editor, and custom themes (Node.js/MySQL). |
 | **[Listmonk](https://github.com/knadh/listmonk)** | [![Listmonk Stars](https://img.shields.io/github/stars/knadh/listmonk?style=social&color=white)](https://github.com/knadh/listmonk/stargazers) | High-performance, lightweight self-hosted newsletter and mailing list manager. Single binary (Go + PostgreSQL) capable of handling millions of subscribers. |
